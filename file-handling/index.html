@@ -1,0 +1,48 @@
+<!-- 
+    <form method="post" action="logic.php" enctype="multipart/form-data">
+        <label>Nama File HTML:</label><br>
+        <input type="text" name="filename" required><br><br>
+
+        <label>Tag Asal (misal: b):</label><br>
+        <input type="text" name="tag_asal" required><br><br>
+
+        <label>Tag Baru (misal: strong):</label><br>
+        <input type="text" name="tag_baru" required><br><br>
+
+        <label>Tipe Keluaran:</label><br>
+        <select name="output_type" required>
+            <option value="O">Overwrite File</option>
+            <option value="N">File Baru</option>
+        </select><br><br>
+        <button type="submit" name="submit">Proses</button>
+    </form> ini yang lama--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ganti Tag HTML dalam File</h2>
+<form method="post" action="logic.php" enctype="multipart/form-data">
+    <label>Upload File HTML:</label><br>
+    <input type="file" name="uploaded_file" accept=".html" required><br><br>
+
+    <label>Tag Asal (misal: b):</label><br>
+    <input type="text" name="tag_asal" required><br><br>
+
+    <label>Tag Baru (misal: strong):</label><br>
+    <input type="text" name="tag_baru" required><br><br>
+
+    <label>Tipe Keluaran:</label><br>
+    <select name="output_type" required>
+        <option value="O">O untuk overwrite</option>
+        <option value="N">N untuk file Baru</option>
+    </select><br><br>
+
+    <button type="submit" name="submit">Proses</button>
+</form>
+</body>
+</html>
